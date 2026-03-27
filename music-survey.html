@@ -61,24 +61,24 @@ footer {
 
 <h1>Music Survey</h1>
 
-<form action="https://formspree.io/f/xdapkwkr" method="POST">
+<form action="https://formspree.io/f/mayvlabc" method="POST">
 
     <!-- Name -->
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" required>
 
     <!-- Email -->
     <label for="email">Email:</label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
 
-    <!-- Comments (scrolling text box) -->
+    <!-- Comments -->
     <label for="comments">Tell us about your music preferences:</label>
-    <textarea name="comments" id="comments" cols="60" rows="3"></textarea>
+    <textarea name="comments" id="comments" cols="60" rows="3" required></textarea>
 
     <!-- Radio Buttons -->
     <fieldset>
         <legend>Favorite Music Genre</legend>
-        <label><input type="radio" name="genre" value="pop"> Pop</label>
+        <label><input type="radio" name="genre" value="pop" required> Pop</label>
         <label><input type="radio" name="genre" value="hiphop"> Hip-Hop</label>
         <label><input type="radio" name="genre" value="rock"> Rock</label>
     </fieldset>
