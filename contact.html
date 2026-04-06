@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Brenton Oliver</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Contact Form Styling */
+        .contact {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .contact h1 {
+            text-align: center;
+        }
+
+        .contact label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact button:hover {
+            background-color: #555;
+        }
+
+        /* Responsive for mobile */
+        @media screen and (max-width: 768px) {
+            .contact {
+                padding: 10px;
+            }
+            .contact input,
+            .contact textarea {
+                font-size: 14px;
+            }
+        }
+
+        /* Navigation styling (basic) */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <h1>Contact Me</h1>
+        <form action="https://formspree.io/f/xdapkwkr" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Optional JS confirmation -->
+    <script>
+        document.querySelector("form").addEventListener("submit", function() {
+            alert("Your message has been sent!");
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Brenton Oliver</p>
+    </footer>
+</body>
+</html>
