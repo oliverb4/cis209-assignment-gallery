@@ -91,6 +91,7 @@ a:hover {
     .contact {
         padding: 10px;
     }
+
     .contact input,
     .contact textarea {
         font-size: 14px;
@@ -121,4 +122,37 @@ footer {
     margin-top: 30px;
     font-size: 0.9em;
     color: #555;
+}
+
+/* ------------------------ */
+/* ABOUT PAGE (ONLY ADD)    */
+/* ------------------------ */
+
+.about {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding: 10px;
+    }
+
+    .profile-img {
+        width: 80%;
+    }
 }
