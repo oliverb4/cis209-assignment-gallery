@@ -4,6 +4,7 @@ body {
     margin: 40px;
 }
 
+/* Header styling (if used on other pages) */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -13,9 +14,21 @@ h1 {
     color: #333;
 }
 
+/* ------------------------ */
+/* TABLE STYLING (UPDATED FOR RESUME) */
+/* ------------------------ */
+
 table {
     width: 80%;
     margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+/* Make resume tables consistent */
+.resume-table {
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
     background: white;
 }
@@ -31,6 +44,7 @@ th {
     color: white;
 }
 
+/* Links */
 a {
     color: blue;
     text-decoration: none;
@@ -41,7 +55,7 @@ a:hover {
 }
 
 /* ------------------------ */
-/* Contact Page Styling     */
+/* CONTACT PAGE STYLING */
 /* ------------------------ */
 
 .contact {
@@ -86,7 +100,7 @@ a:hover {
     background-color: #555;
 }
 
-/* Responsive for mobile */
+/* Responsive for contact page */
 @media screen and (max-width: 768px) {
     .contact {
         padding: 10px;
@@ -98,7 +112,10 @@ a:hover {
     }
 }
 
-/* Navigation styling */
+/* ------------------------ */
+/* NAVIGATION */
+/* ------------------------ */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -116,7 +133,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Footer styling */
+/* ------------------------ */
+/* FOOTER */
+/* ------------------------ */
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -125,7 +145,7 @@ footer {
 }
 
 /* ------------------------ */
-/* ABOUT PAGE (ONLY ADD)    */
+/* ABOUT PAGE */
 /* ------------------------ */
 
 .about {
@@ -147,6 +167,7 @@ footer {
     margin-top: 15px;
 }
 
+/* Responsive for about page */
 @media screen and (max-width: 768px) {
     .about {
         padding: 10px;
@@ -154,5 +175,27 @@ footer {
 
     .profile-img {
         width: 80%;
+    }
+}
+
+/* ------------------------ */
+/* RESUME PAGE IMPROVEMENTS */
+/* ------------------------ */
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile responsiveness for resume tables */
+@media screen and (max-width: 768px) {
+    .resume-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .resume-table th,
+    .resume-table td {
+        padding: 8px;
     }
 }
