@@ -15,7 +15,7 @@ h1 {
 }
 
 /* ------------------------ */
-/* TABLE STYLING (UPDATED FOR RESUME) */
+/* TABLE STYLING (RESUME) */
 /* ------------------------ */
 
 table {
@@ -25,7 +25,6 @@ table {
     background: white;
 }
 
-/* Make resume tables consistent */
 .resume-table {
     width: 80%;
     margin: 20px auto;
@@ -100,7 +99,7 @@ a:hover {
     background-color: #555;
 }
 
-/* Responsive for contact page */
+/* Responsive contact */
 @media screen and (max-width: 768px) {
     .contact {
         padding: 10px;
@@ -127,6 +126,8 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #333;
+    padding: 8px 12px;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -167,7 +168,7 @@ footer {
     margin-top: 15px;
 }
 
-/* Responsive for about page */
+/* Responsive about */
 @media screen and (max-width: 768px) {
     .about {
         padding: 10px;
@@ -187,7 +188,6 @@ section {
     padding: 20px;
 }
 
-/* Mobile responsiveness for resume tables */
 @media screen and (max-width: 768px) {
     .resume-table {
         width: 100%;
@@ -197,5 +197,48 @@ section {
     .resume-table th,
     .resume-table td {
         padding: 8px;
+    }
+}
+
+/* ------------------------ */
+/* PROJECT PAGE (IMPROVED) */
+/* ------------------------ */
+
+.project {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive video (FIXED for all devices) */
+.project-video {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Responsive project section */
+@media screen and (max-width: 768px) {
+    .project {
+        padding: 10px;
+    }
+
+    .project-img,
+    .project-video {
+        width: 100%;
     }
 }
